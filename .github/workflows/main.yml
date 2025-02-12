@@ -18,8 +18,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.101
-    - name: Restore dependencies
-      run: dotnet restore --skip-verify
+    - name: Restore dependencies      
+      run: dotnet restore --disable-parallel --ignore-failed-sources
     - name: Build
       run: dotnet build --no-restore
     - name: Test
