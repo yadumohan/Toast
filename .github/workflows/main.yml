@@ -11,7 +11,7 @@ defaults:
     working-directory: "./src/TailBlazor.Toast"
 jobs:
   build:
-    runs-on: latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2    
     - name: Install OpenSSL 1.1
